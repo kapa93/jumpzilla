@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <title>Jumpzilla</title>
+  <link rel="stylesheet" href="cssdeck.css">
+</head>
+<body>
+  <img src="images/zilla_logo.png" alt="logo" style="display:block; margin-right:auto; width:350px; margin-bottom:-25px; margin-left:auto;">
+  <div class="container">
+    <canvas id="canvas">
+      Aww, your browser doesn't support HTML5!
+    </canvas>
+
+    <div id="mainMenu">
+      <img src="images/zilla_logo.png" alt="logo" style="display:block; margin-left:auto; margin-right:auto; margin-top:40px; width:330px;">
+
+      <p class="info">
+        use <- & ->
+        to move and space to restart...
+      </p>
+      <a class="button1" href="javascript:init()">Play</a>
+    </div>
+
+    <div id="gameOverMenu">
+      <h1>game over!</h1>
+      <h2 id="go_score">you scored 0 points</h2>
+
+      <a class="button1" href="javascript:reset()">Restart</a>
+      
+    </div>
+<button id="btn3" href="javascript">Left</button>
+<button id="btn4" href="javascript">Right</button>
+    
+    
+    <!-- Preloading image ;) -->
+    <img id="sprite" src="images/b6ySa2.png"/>
+
+    <div id="scoreBoard">
+      <p id="score">0</p>
+    </div>
+
+  </div>
+  <script src="game.js">
+</script>
+</body>
+</html> 
